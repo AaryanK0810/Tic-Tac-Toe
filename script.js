@@ -62,3 +62,7 @@ function checkWinner()
     return null;
 }
 
+function checkDraw()
+{
+    return board.every(cell => cell !== '');
+}

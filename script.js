@@ -37,11 +37,13 @@ cells.forEach((cell , index) => {
         if(winner)
         {
             winDialog.showModal();
+            return;
         }
 
         if(checkDraw())
         {
             drawDialog.showModal();
+            return;
         }
 
         switchPlayer();

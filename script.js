@@ -42,3 +42,23 @@ const winningCombinations = [
     [0, 4, 8],
     [2, 4, 6]
 ];
+
+function checkWinner()
+{
+    for (let combination of winningCombinations)
+    {
+        const a = board[combination[0]];
+        const b = board[combination[1]];
+        const c = board[combination[2]];
+
+        if (board[a] !== '' &&
+            board[a] == board[b] &&
+            board[a] == board[c]
+        )
+        {
+            return board[a];
+        }
+    }
+    return null;
+}
+

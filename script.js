@@ -1,3 +1,6 @@
+const player1 = document.getElementById('player1-name').value;
+const player2 = document.getElementById('player2-name').value;
+const startBtn = document.getElementById('start-game');
 const winDialog = document.getElementById('winner-dialog');
 const drawDialog = document.getElementById('draw-dialog');
 

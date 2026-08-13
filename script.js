@@ -10,6 +10,8 @@ const drawDialog = document.getElementById('draw-dialog');
 
 const winMessage = document.getElementById('win-message');
 
+const restart = document.getElementById('restart');
+
 let player1 = 'Player 1';
 let player2 = 'Player 2';
 
@@ -146,3 +148,8 @@ function checkDraw()
 {
     return board.every(cell => cell !== '');
 }
+
+// Restart Game
+restart.addEventListener( 'click' , () => {
+location.reload();
+})
